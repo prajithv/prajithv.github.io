@@ -2,8 +2,44 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                throwOnError : false
+                });
+            });
+        </script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     </head>
     <body>  
-        <h1>Example</h1>
+        <a href="index.html"><img id="logo" src="images/logo.png"></img></a>
+
+        <hr>
+
+        <h1>Welcome to my website!</h1>
+
+        <p>Hi, I'm Prajith. From exploring raw computer graphics to immersing myself in movies, I'm willing to talk about any topic under the sun. Besides delving into math-related topics, I deeply enjoy my hobbies: music, writing, and chess.</p>
+
+        <p id="month">April 2022</p>
+        <ul>
+            <li><a href="descriptors.html">Descriptors</a></li>
+        </ul>
+
+        <footer>
+            <p id="footer-content">&copy 2022 Prajith Velicheti</p>
+        </footer>
     </body>
 </html>
